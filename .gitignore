@@ -1,0 +1,23 @@
+# ── ass3 RAG assignment .gitignore ──
+
+# 大型中间产物（重跑 notebook 自动再生，无需进 Git）
+rag_data/corpus_emb.npy
+rag_data/faiss_index.bin
+rag_data/attack_records.pkl
+rag_data/chunks_list.pkl
+
+# 源数据（notebook 运行时自动从官方源下载）
+rag_data/enterprise-attack.json
+rag_data/cisa_kev.json
+rag_data/cyqa_dataset.json
+rag_data/NIST_SP_800-53_Rev_5.pdf
+rag_data/NIST_CSF_2_0.pdf
+
+# 根目录冗余源文件（§2.2 会自动下载到 rag_data/）
+nist_800_61r2.pdf
+enterprise-attack.json
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+__pycache__/
